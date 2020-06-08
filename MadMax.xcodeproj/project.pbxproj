@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74C08AECC90FB0CEA18780C0 /* Pods_MadMax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BA0CC861B6B9D1EB3F8C6F /* Pods_MadMax.framework */; };
+		B5431BA42475B23F00D59DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5431BA32475B23F00D59DED /* AppDelegate.swift */; };
+		B5431BA62475B23F00D59DED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5431BA52475B23F00D59DED /* SceneDelegate.swift */; };
+		B5431BA82475B23F00D59DED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5431BA72475B23F00D59DED /* ViewController.swift */; };
+		B5431BAB2475B23F00D59DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5431BA92475B23F00D59DED /* Main.storyboard */; };
+		B5431BAD2475B24200D59DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5431BAC2475B24200D59DED /* Assets.xcassets */; };
+		B5431BB02475B24200D59DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5431BAE2475B24200D59DED /* LaunchScreen.storyboard */; };
+		B544E3312475C8EB0047C963 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544E3302475C8EB0047C963 /* UIView.swift */; };
+		B544E3342475C9120047C963 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544E3332475C9120047C963 /* UIImage.swift */; };
+		B544E336247691DF0047C963 /* BackGroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544E335247691DF0047C963 /* BackGroundImageView.swift */; };
+		B544E339247691FE0047C963 /* BackGroundImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B544E338247691FE0047C963 /* BackGroundImageView.xib */; };
+		B544E33C2476B6D90047C963 /* smoke.gif in Resources */ = {isa = PBXBuildFile; fileRef = B544E33B2476B6D90047C963 /* smoke.gif */; };
+		B544E33F2476CBF70047C963 /* RoadLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544E33E2476CBF70047C963 /* RoadLinesView.swift */; };
+		B544E3412476CC030047C963 /* RoadLinesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B544E3402476CC030047C963 /* RoadLinesView.xib */; };
+		B544E3432476D3AF0047C963 /* CarsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544E3422476D3AF0047C963 /* CarsImageView.swift */; };
+		B544E3452476D7160047C963 /* CarsImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B544E3442476D7160047C963 /* CarsImageView.xib */; };
+		B544E37B24793C0E0047C963 /* newMaxBG.gif in Resources */ = {isa = PBXBuildFile; fileRef = B544E37A24793C0E0047C963 /* newMaxBG.gif */; };
+		B544E37D24793DC60047C963 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544E37C24793DC60047C963 /* MainViewController.swift */; };
+		B544E37F247949E50047C963 /* ScoreboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544E37E247949E50047C963 /* ScoreboardViewController.swift */; };
+		B544E38124794A0A0047C963 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544E38024794A0A0047C963 /* SettingsViewController.swift */; };
+		B544E38324794F2E0047C963 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544E38224794F2E0047C963 /* ResultViewController.swift */; };
+		B544E3872479DD9F0047C963 /* SettingsCarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544E3852479DD9F0047C963 /* SettingsCarCollectionViewCell.swift */; };
+		B544E3882479DD9F0047C963 /* SettingsCarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B544E3862479DD9F0047C963 /* SettingsCarCollectionViewCell.xib */; };
+		B544E38A2479EA5A0047C963 /* ResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544E3892479EA5A0047C963 /* ResultData.swift */; };
+		B544E38F2479EF0E0047C963 /* ScorebordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B544E38D2479EF0E0047C963 /* ScorebordTableViewCell.swift */; };
+		B544E3902479EF0E0047C963 /* ScorebordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B544E38E2479EF0E0047C963 /* ScorebordTableViewCell.xib */; };
+		B544E394247A81080047C963 /* bgScore.gif in Resources */ = {isa = PBXBuildFile; fileRef = B544E393247A81080047C963 /* bgScore.gif */; };
+		B57F9C34248139C10015D2E2 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F9C33248139C10015D2E2 /* R.generated.swift */; };
+		B5A32333247C24D7008E251C /* swipe.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5A32332247C24D7008E251C /* swipe.gif */; };
+		B5B76395247B1B810063EBF6 /* 96681345928a4a4a6279e7f12c27c500.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5B76394247B1B810063EBF6 /* 96681345928a4a4a6279e7f12c27c500.gif */; };
+		B5D06829247AC15100358D2D /* coins.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5D06828247AC15100358D2D /* coins.gif */; };
+		B5D0682B247AC1C200358D2D /* CoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0682A247AC1C200358D2D /* CoinsView.swift */; };
+		B5D0682D247AC1D000358D2D /* CoinsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D0682C247AC1D000358D2D /* CoinsView.xib */; };
+		B5D0682F247ACFB000358D2D /* source.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5D0682E247ACFB000358D2D /* source.gif */; };
+		B5D06832247AE82300358D2D /* advanced_pixel-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D06831247AE82300358D2D /* advanced_pixel-7.ttf */; };
+		B5D06834247AE93B00358D2D /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D06833247AE93B00358D2D /* UILabel.swift */; };
+		B5E463D724853A130089DDAF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5E463D624853A130089DDAF /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		065B214BC6008A2B61E16485 /* Pods-MadMax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MadMax.debug.xcconfig"; path = "Target Support Files/Pods-MadMax/Pods-MadMax.debug.xcconfig"; sourceTree = "<group>"; };
+		1C285430E110EC0F00D5D6BE /* Pods-MadMax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MadMax.release.xcconfig"; path = "Target Support Files/Pods-MadMax/Pods-MadMax.release.xcconfig"; sourceTree = "<group>"; };
+		B5431BA02475B23F00D59DED /* MadMax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadMax.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5431BA32475B23F00D59DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5431BA52475B23F00D59DED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B5431BA72475B23F00D59DED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5431BAA2475B23F00D59DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5431BAC2475B24200D59DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5431BAF2475B24200D59DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5431BB12475B24200D59DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B544E3302475C8EB0047C963 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		B544E3332475C9120047C963 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		B544E335247691DF0047C963 /* BackGroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGroundImageView.swift; sourceTree = "<group>"; };
+		B544E338247691FE0047C963 /* BackGroundImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackGroundImageView.xib; sourceTree = "<group>"; };
+		B544E33B2476B6D90047C963 /* smoke.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = smoke.gif; sourceTree = "<group>"; };
+		B544E33E2476CBF70047C963 /* RoadLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadLinesView.swift; sourceTree = "<group>"; };
+		B544E3402476CC030047C963 /* RoadLinesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoadLinesView.xib; sourceTree = "<group>"; };
+		B544E3422476D3AF0047C963 /* CarsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsImageView.swift; sourceTree = "<group>"; };
+		B544E3442476D7160047C963 /* CarsImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsImageView.xib; sourceTree = "<group>"; };
+		B544E37A24793C0E0047C963 /* newMaxBG.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = newMaxBG.gif; sourceTree = "<group>"; };
+		B544E37C24793DC60047C963 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B544E37E247949E50047C963 /* ScoreboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardViewController.swift; sourceTree = "<group>"; };
+		B544E38024794A0A0047C963 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B544E38224794F2E0047C963 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		B544E3852479DD9F0047C963 /* SettingsCarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCarCollectionViewCell.swift; sourceTree = "<group>"; };
+		B544E3862479DD9F0047C963 /* SettingsCarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCarCollectionViewCell.xib; sourceTree = "<group>"; };
+		B544E3892479EA5A0047C963 /* ResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultData.swift; sourceTree = "<group>"; };
+		B544E38D2479EF0E0047C963 /* ScorebordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorebordTableViewCell.swift; sourceTree = "<group>"; };
+		B544E38E2479EF0E0047C963 /* ScorebordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScorebordTableViewCell.xib; sourceTree = "<group>"; };
+		B544E393247A81080047C963 /* bgScore.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bgScore.gif; sourceTree = "<group>"; };
+		B57F9C33248139C10015D2E2 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		B5A32332247C24D7008E251C /* swipe.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = swipe.gif; sourceTree = "<group>"; };
+		B5B76394247B1B810063EBF6 /* 96681345928a4a4a6279e7f12c27c500.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 96681345928a4a4a6279e7f12c27c500.gif; sourceTree = "<group>"; };
+		B5D06828247AC15100358D2D /* coins.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = coins.gif; sourceTree = "<group>"; };
+		B5D0682A247AC1C200358D2D /* CoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsView.swift; sourceTree = "<group>"; };
+		B5D0682C247AC1D000358D2D /* CoinsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinsView.xib; sourceTree = "<group>"; };
+		B5D0682E247ACFB000358D2D /* source.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = source.gif; sourceTree = "<group>"; };
+		B5D06831247AE82300358D2D /* advanced_pixel-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "advanced_pixel-7.ttf"; sourceTree = "<group>"; };
+		B5D06833247AE93B00358D2D /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		B5E463D624853A130089DDAF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B9BA0CC861B6B9D1EB3F8C6F /* Pods_MadMax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MadMax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5431B9D2475B23F00D59DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C08AECC90FB0CEA18780C0 /* Pods_MadMax.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C939737557D6911974DF102 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				065B214BC6008A2B61E16485 /* Pods-MadMax.debug.xcconfig */,
+				1C285430E110EC0F00D5D6BE /* Pods-MadMax.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC67D27BED9D067688733FA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9BA0CC861B6B9D1EB3F8C6F /* Pods_MadMax.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5431B972475B23F00D59DED = {
+			isa = PBXGroup;
+			children = (
+				B5431BA22475B23F00D59DED /* MadMax */,
+				B5431BA12475B23F00D59DED /* Products */,
+				5C939737557D6911974DF102 /* Pods */,
+				AC67D27BED9D067688733FA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5431BA12475B23F00D59DED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5431BA02475B23F00D59DED /* MadMax.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5431BA22475B23F00D59DED /* MadMax */ = {
+			isa = PBXGroup;
+			children = (
+				B57F9C33248139C10015D2E2 /* R.generated.swift */,
+				B5D06830247AE81000358D2D /* Fonts */,
+				B544E33A2476B6CC0047C963 /* gif */,
+				B544E32F2475C8CE0047C963 /* Extension */,
+				B5431BB92475B3B500D59DED /* Model */,
+				B5431BB82475B3AE00D59DED /* Controller */,
+				B5431BB72475B3A800D59DED /* View */,
+				B5431BA32475B23F00D59DED /* AppDelegate.swift */,
+				B5431BA52475B23F00D59DED /* SceneDelegate.swift */,
+				B5431BAC2475B24200D59DED /* Assets.xcassets */,
+				B5431BAE2475B24200D59DED /* LaunchScreen.storyboard */,
+				B5431BB12475B24200D59DED /* Info.plist */,
+				B5E463D624853A130089DDAF /* GoogleService-Info.plist */,
+			);
+			path = MadMax;
+			sourceTree = "<group>";
+		};
+		B5431BB72475B3A800D59DED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B544E38B2479EEE30047C963 /* UITableViewCell */,
+				B544E3842479DD790047C963 /* UICollectionViewCell */,
+				B544E337247691E30047C963 /* UIView */,
+				B5431BA92475B23F00D59DED /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5431BB82475B3AE00D59DED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5431BA72475B23F00D59DED /* ViewController.swift */,
+				B544E37C24793DC60047C963 /* MainViewController.swift */,
+				B544E37E247949E50047C963 /* ScoreboardViewController.swift */,
+				B544E38024794A0A0047C963 /* SettingsViewController.swift */,
+				B544E38224794F2E0047C963 /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5431BB92475B3B500D59DED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B544E3892479EA5A0047C963 /* ResultData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B544E32F2475C8CE0047C963 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B544E3302475C8EB0047C963 /* UIView.swift */,
+				B544E3332475C9120047C963 /* UIImage.swift */,
+				B5D06833247AE93B00358D2D /* UILabel.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B544E337247691E30047C963 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				B544E335247691DF0047C963 /* BackGroundImageView.swift */,
+				B544E338247691FE0047C963 /* BackGroundImageView.xib */,
+				B544E33E2476CBF70047C963 /* RoadLinesView.swift */,
+				B544E3402476CC030047C963 /* RoadLinesView.xib */,
+				B544E3422476D3AF0047C963 /* CarsImageView.swift */,
+				B544E3442476D7160047C963 /* CarsImageView.xib */,
+				B5D0682A247AC1C200358D2D /* CoinsView.swift */,
+				B5D0682C247AC1D000358D2D /* CoinsView.xib */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		B544E33A2476B6CC0047C963 /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				B5A32332247C24D7008E251C /* swipe.gif */,
+				B5B76394247B1B810063EBF6 /* 96681345928a4a4a6279e7f12c27c500.gif */,
+				B5D0682E247ACFB000358D2D /* source.gif */,
+				B5D06828247AC15100358D2D /* coins.gif */,
+				B544E37A24793C0E0047C963 /* newMaxBG.gif */,
+				B544E33B2476B6D90047C963 /* smoke.gif */,
+				B544E393247A81080047C963 /* bgScore.gif */,
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
+		B544E3842479DD790047C963 /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B544E3852479DD9F0047C963 /* SettingsCarCollectionViewCell.swift */,
+				B544E3862479DD9F0047C963 /* SettingsCarCollectionViewCell.xib */,
+			);
+			path = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
+		B544E38B2479EEE30047C963 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B544E38D2479EF0E0047C963 /* ScorebordTableViewCell.swift */,
+				B544E38E2479EF0E0047C963 /* ScorebordTableViewCell.xib */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		B5D06830247AE81000358D2D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B5D06831247AE82300358D2D /* advanced_pixel-7.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5431B9F2475B23F00D59DED /* MadMax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5431BB42475B24200D59DED /* Build configuration list for PBXNativeTarget "MadMax" */;
+			buildPhases = (
+				5DD23685B4E59E3B7B3AD165 /* [CP] Check Pods Manifest.lock */,
+				B57F9C32248139350015D2E2 /* R.swift */,
+				B5431B9C2475B23F00D59DED /* Sources */,
+				B5431B9D2475B23F00D59DED /* Frameworks */,
+				B5431B9E2475B23F00D59DED /* Resources */,
+				2C1BFBFEEA7654A55AC01531 /* [CP] Embed Pods Frameworks */,
+				B5E463D824853D250089DDAF /* Crashlitics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MadMax;
+			productName = MadMax;
+			productReference = B5431BA02475B23F00D59DED /* MadMax.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5431B982475B23F00D59DED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Dmitry Semenuk";
+				TargetAttributes = {
+					B5431B9F2475B23F00D59DED = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B5431B9B2475B23F00D59DED /* Build configuration list for PBXProject "MadMax" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5431B972475B23F00D59DED;
+			productRefGroup = B5431BA12475B23F00D59DED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5431B9F2475B23F00D59DED /* MadMax */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5431B9E2475B23F00D59DED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5431BB02475B24200D59DED /* LaunchScreen.storyboard in Resources */,
+				B5A32333247C24D7008E251C /* swipe.gif in Resources */,
+				B5B76395247B1B810063EBF6 /* 96681345928a4a4a6279e7f12c27c500.gif in Resources */,
+				B5D0682F247ACFB000358D2D /* source.gif in Resources */,
+				B5D06829247AC15100358D2D /* coins.gif in Resources */,
+				B5D0682D247AC1D000358D2D /* CoinsView.xib in Resources */,
+				B544E37B24793C0E0047C963 /* newMaxBG.gif in Resources */,
+				B544E3452476D7160047C963 /* CarsImageView.xib in Resources */,
+				B544E3412476CC030047C963 /* RoadLinesView.xib in Resources */,
+				B5431BAD2475B24200D59DED /* Assets.xcassets in Resources */,
+				B544E394247A81080047C963 /* bgScore.gif in Resources */,
+				B5E463D724853A130089DDAF /* GoogleService-Info.plist in Resources */,
+				B544E339247691FE0047C963 /* BackGroundImageView.xib in Resources */,
+				B544E33C2476B6D90047C963 /* smoke.gif in Resources */,
+				B544E3902479EF0E0047C963 /* ScorebordTableViewCell.xib in Resources */,
+				B5431BAB2475B23F00D59DED /* Main.storyboard in Resources */,
+				B544E3882479DD9F0047C963 /* SettingsCarCollectionViewCell.xib in Resources */,
+				B5D06832247AE82300358D2D /* advanced_pixel-7.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C1BFBFEEA7654A55AC01531 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MadMax/Pods-MadMax-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MadMax/Pods-MadMax-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MadMax/Pods-MadMax-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DD23685B4E59E3B7B3AD165 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MadMax-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B57F9C32248139350015D2E2 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		B5E463D824853D250089DDAF /* Crashlitics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			name = Crashlitics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5431B9C2475B23F00D59DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D06834247AE93B00358D2D /* UILabel.swift in Sources */,
+				B544E3312475C8EB0047C963 /* UIView.swift in Sources */,
+				B5D0682B247AC1C200358D2D /* CoinsView.swift in Sources */,
+				B544E3342475C9120047C963 /* UIImage.swift in Sources */,
+				B544E38124794A0A0047C963 /* SettingsViewController.swift in Sources */,
+				B544E336247691DF0047C963 /* BackGroundImageView.swift in Sources */,
+				B544E38F2479EF0E0047C963 /* ScorebordTableViewCell.swift in Sources */,
+				B544E38A2479EA5A0047C963 /* ResultData.swift in Sources */,
+				B5431BA82475B23F00D59DED /* ViewController.swift in Sources */,
+				B544E37F247949E50047C963 /* ScoreboardViewController.swift in Sources */,
+				B5431BA42475B23F00D59DED /* AppDelegate.swift in Sources */,
+				B57F9C34248139C10015D2E2 /* R.generated.swift in Sources */,
+				B544E3432476D3AF0047C963 /* CarsImageView.swift in Sources */,
+				B544E37D24793DC60047C963 /* MainViewController.swift in Sources */,
+				B5431BA62475B23F00D59DED /* SceneDelegate.swift in Sources */,
+				B544E33F2476CBF70047C963 /* RoadLinesView.swift in Sources */,
+				B544E38324794F2E0047C963 /* ResultViewController.swift in Sources */,
+				B544E3872479DD9F0047C963 /* SettingsCarCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5431BA92475B23F00D59DED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5431BAA2475B23F00D59DED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5431BAE2475B24200D59DED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5431BAF2475B24200D59DED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5431BB22475B24200D59DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B5431BB32475B24200D59DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5431BB52475B24200D59DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 065B214BC6008A2B61E16485 /* Pods-MadMax.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YMP7MRX9HP;
+				INFOPLIST_FILE = MadMax/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitrysem.MadMax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B5431BB62475B24200D59DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C285430E110EC0F00D5D6BE /* Pods-MadMax.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YMP7MRX9HP;
+				INFOPLIST_FILE = MadMax/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitrysem.MadMax;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5431B9B2475B23F00D59DED /* Build configuration list for PBXProject "MadMax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5431BB22475B24200D59DED /* Debug */,
+				B5431BB32475B24200D59DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5431BB42475B24200D59DED /* Build configuration list for PBXNativeTarget "MadMax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5431BB52475B24200D59DED /* Debug */,
+				B5431BB62475B24200D59DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5431B982475B23F00D59DED /* Project object */;
+}
