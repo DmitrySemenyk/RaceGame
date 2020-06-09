@@ -210,7 +210,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 54 images.
+  /// This `R.image` struct is generated, and contains static references to 55 images.
   struct image {
     /// Image `96681345928a4a4a6279e7f12c27c500.gif`.
     static let a4a4a6279e7f12c27c500Gif = Rswift.ImageResource(bundle: R.hostingBundle, name: "96681345928a4a4a6279e7f12c27c500.gif")
@@ -306,6 +306,8 @@ struct R: Rswift.Validatable {
     static let close = Rswift.ImageResource(bundle: R.hostingBundle, name: "close")
     /// Image `coins.gif`.
     static let coinsGif = Rswift.ImageResource(bundle: R.hostingBundle, name: "coins.gif")
+    /// Image `garagelight`.
+    static let garagelight = Rswift.ImageResource(bundle: R.hostingBundle, name: "garagelight")
     /// Image `newMaxBG.gif`.
     static let newMaxBGGif = Rswift.ImageResource(bundle: R.hostingBundle, name: "newMaxBG.gif")
     /// Image `noun_settings pixel art_2758641`.
@@ -647,6 +649,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "coins.gif", bundle: ..., traitCollection: ...)`
     static func coinsGif(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.coinsGif, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "garagelight", bundle: ..., traitCollection: ...)`
+    static func garagelight(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.garagelight, compatibleWith: traitCollection)
     }
     #endif
 

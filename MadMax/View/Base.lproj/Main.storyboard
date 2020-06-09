@@ -115,6 +115,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dcr-lk-v0J">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTG-ax-K9M">
                                 <rect key="frame" x="314" y="84" width="60" height="60"/>
                                 <constraints>
@@ -140,6 +143,10 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="dcr-lk-v0J" firstAttribute="leading" secondItem="qcC-jj-Zlt" secondAttribute="leading" id="5oI-Nf-s83"/>
+                            <constraint firstItem="dcr-lk-v0J" firstAttribute="trailing" secondItem="qcC-jj-Zlt" secondAttribute="trailing" id="7Pa-FV-cP6"/>
+                            <constraint firstItem="dcr-lk-v0J" firstAttribute="top" secondItem="LQ5-hf-cJR" secondAttribute="top" id="KEm-hq-A0c"/>
+                            <constraint firstAttribute="bottom" secondItem="dcr-lk-v0J" secondAttribute="bottom" id="R1b-07-gKP"/>
                             <constraint firstItem="FlO-90-bbu" firstAttribute="trailing" secondItem="qcC-jj-Zlt" secondAttribute="trailing" id="XMN-dC-7D2"/>
                             <constraint firstItem="qcC-jj-Zlt" firstAttribute="trailing" secondItem="PTG-ax-K9M" secondAttribute="trailing" constant="40" id="eYL-Vk-1kF"/>
                             <constraint firstItem="FlO-90-bbu" firstAttribute="centerY" secondItem="LQ5-hf-cJR" secondAttribute="centerY" id="lSX-JL-SPt"/>
@@ -150,6 +157,7 @@
                         <viewLayoutGuide key="safeArea" id="qcC-jj-Zlt"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundImageView" destination="dcr-lk-v0J" id="NDN-Cq-DFX"/>
                         <outlet property="carsCollectionView" destination="FlO-90-bbu" id="B6j-Nd-xX2"/>
                     </connections>
                 </viewController>
@@ -337,9 +345,9 @@
                                     <action selector="setRootController:" destination="910-WN-W7D" eventType="touchUpInside" id="uLz-n5-dBJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsR-Pn-hOf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsR-Pn-hOf">
                                 <rect key="frame" x="20" y="244" width="374" height="408"/>
-                                <fontDescription key="fontDescription" name="Advanced_Pixel-7" family="Advanced Pixel-7" pointSize="100"/>
+                                <fontDescription key="fontDescription" name="Advanced_Pixel-7" family="Advanced Pixel-7" pointSize="60"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
