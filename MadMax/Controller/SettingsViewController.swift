@@ -10,21 +10,35 @@ import UIKit
 
 class SettingsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var carsCollectionView: UICollectionView!
+
     var carsImageArrayName: [String] = ["Car blue","Car grey","Car red","Car Striped","Car yellow"]
     
-    @IBOutlet weak var carsCollectionView: UICollectionView!
+    
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         carsCollectionView.delegate = self
         carsCollectionView.dataSource = self
-        
         carsCollectionView.register(UINib(nibName: "SettingsCarCollectionViewCell",
               bundle: Bundle.main),
         forCellWithReuseIdentifier: "SettingsCarCollectionViewCell")
+        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        backgroundImageView.image = R.image.garagelight()
+        backgroundImageView.contentMode = .scaleToFill
+    }
+    
+    //MARK: - Action
     @IBAction func closeSettings(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
+    
+    //MARK: - Background
+    
     
     // MARK: - Collection View
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
